@@ -5,6 +5,7 @@ description = "Faithful Implementation of R-CED Network"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "h5py>=3.13.0",
     "hydra-core>=1.3.2",
     "matplotlib>=3.10.1",
     "numpy>=2.2.5",

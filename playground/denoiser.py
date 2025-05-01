@@ -1,23 +1,5 @@
 #!/usr/bin/env python3
-"""Single‑click denoiser.
 
-Everything lives in *playground/*. No arguments, no overrides.
-
-```
-playground/
-├── denoiser.py   ← this file
-├── model.py      ← RCED definition
-├── best_model.pt ← trained weights
-├── mean_std.npz  ← normalisation stats
-├── noisy.wav     ← input
-├── enhanced.wav  ← output (created)
-└── compare.png   ← plot (created)
-```
-Run it from anywhere:
-```bash
-python playground/denoiser.py
-```
-"""
 
 from __future__ import annotations
 

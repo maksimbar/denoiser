@@ -2,8 +2,9 @@ data:
   seed: 42 
   sample_rate: 8000
   samples:
-    clean: ${hydra:runtime.cwd}/data_small/clean
-    noisy: ${hydra:runtime.cwd}/data_small/noisy
+    train: ${hydra:runtime.cwd}/data/train
+    valid: ${hydra:runtime.cwd}/data/valid
+    test: ${hydra:runtime.cwd}/data/test
   cache: cache
 
 stft:
@@ -20,7 +21,7 @@ model:
   activation: "relu"
 
 train:
-  epochs: 50
+  epochs: 60
   batch_size: 64
   lr_scheduler:
     patience: 4
